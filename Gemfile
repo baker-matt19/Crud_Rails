@@ -76,3 +76,7 @@ end
 
 
 gem "cssbundling-rails", "~> 1.4"
+
+gem "dartsass-rails", "~> 0.5.1"
+
+gem "coffee-rails"
