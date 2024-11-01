@@ -1,20 +1,27 @@
-<% content_for :page_title,  "Index" %>
+<% content_for :page_title, "Index" %>
+
+<%# <h1 class="title">Main Index</h1> %>
 
 <div class="section">
 	<div class="container">
+		<%# creating a ruby loop to display all posts %>
 		<% @posts.each do |post| %>
 			<div class="card">
 		  <div class="card-content">
 		    <div class="media">
 		      <div class="media-content">
+				<%# using the controller to get the post title as a link to the post %>
 		        <p class="title is-4"><%= link_to post.title, post  %></p>
 		      </div>
 		    </div>
 		    <div class="content">
-		     	<%= post.content %>
+				<%# using the controller to get the post content as a link to the post %>
+		     	<%= link_to post.content, post %>
 		    </div>
 		    <div class="comment-count">
-		    	<%# <span class="tag is-rounded"><%= post.comments.count  comments</span> %>
+		    	<span class="tag is-rounded">
+					<%# <%= post.comments.count %> 
+					 comments</span>
 		    </div>
 		  </div>
 		</div>
