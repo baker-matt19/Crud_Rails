@@ -33,7 +33,7 @@ gem "bootsnap", require: false
 
 
 # A modern CSS framework based on Flexbox
-gem "bulma-rails", "~> 1.0", ">= 1.0.2"
+gem "bulma-rails", "~> 1.0"
 
 # Forms made easy!
 gem "simple_form", "~> 5.3", ">= 5.3.1"
